@@ -108,22 +108,32 @@ layout: two-cols
 </div>
 
 ---
+layout: two-cols
+---
 
 # What are the puzzles like?
 
 - Christmas themed 🎄
-- Generally increasing in difficulty each day
+- Difficulty generally increasing each day
   - Part Two is usually a step up from Part One
-- Each puzzle is fully stand-alone (usually)
-- Lots of different problem types, but some common features are
-  - Text parsing
-  - Data structures
-  - Grids and geometry
-  - Graphs (not 📊, the other kind of graph)
-  - Trees (not 🌲, the other kind of tree)
-  - Pathfinding
-  - Combinatorics
-  - Recursion
+- Each day is fully stand-alone *
+- Explanations are well-written and very thorough
+- Beautiful ASCII art on the Advent Calendar page
+- Fun little hover titles hidden through the text
+
+::right::
+
+<div style="margin-top: 3.5em;"></div>
+
+Many different problem types, but some recurring features:
+- Text parsing
+- Data structures
+- Grids and geometry
+- Graphs (not 📊, the other kind of graph)
+- Trees (not 🌲, the other kind of tree)
+- Pathfinding
+- Combinatorics
+- Recursion
 
 ---
 
@@ -157,6 +167,18 @@ image: ./third-place.jpg
 - Global leaderboard shut down
   - Bad actors and AI abusers ruined it for everybody
   - Private leaderboards still allowed
+
+---
+
+# Tips?
+
+- **Don't get discouraged**, some of these puzzles are genuinely *super* hard
+- **Explore the Standard Library**, loads of very helpful modules are already
+  built right into Python
+- **Check out the subreddit**, mostly a very positive community
+- **Have fun with it**, try out a new technique or a library or even a whole language, or make a
+  cool visualisation
+- **Don't stress about leaderboard timings**
 
 ---
 layout: image-right
