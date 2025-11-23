@@ -38,8 +38,8 @@ transition: fade-out
 
 # What is Advent of Code?
 
-Advent of Code (AoC) is a series of programming puzzles held every year in
-December.
+A series of programming puzzle challenges held every
+year in December
 
 - 📅 Running every year since 2015
 - 🌟 500 puzzles released so far
@@ -80,8 +80,8 @@ layout: two-cols
 - During the challenge, a new puzzle is released each day at midnight US EST (4
   pm in Canberra)
 - All puzzles remain open to complete at any time
-- Each puzzle describes the problem, explains the rules, and gives you an
-  example input
+- Each puzzle has a text description of the problem, an explanation of the
+  rules, and an example input
 - Log in with your profile to get access to your randomised puzzle input 
 - Use whatever languages and tools you like to solve the problem
   - But don't use AI, that sucks 🤖🙅‍♂️
