@@ -138,8 +138,13 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
+# Vim stuff
+.*.sw?
+
+# Imported from slidev init
 .DS_Store
 *.local
 .vite-inspect
 .remote-assets
 components.d.ts
+
