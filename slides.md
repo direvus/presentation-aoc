@@ -1,9 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
+background: advent-interactive-bg.png
 # some information about your slides (markdown enabled)
 title: "Advent of Code: an introduction and a Python toolkit"
 info: |
@@ -29,11 +27,19 @@ duration: 35min
 ## An introduction + a Python toolkit
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Hi everyone, and welcome to my talk about Advent of Code.
+
+In this talk, I'm going to give an overview about what Advent of Code is, who
+it's for and hopefully give you a sense about whether it's your jam.
+
+Then, I'm going to give a quick tour through the Python toolkit that I've built
+up during my time with Advent of Code, which you are very welcome to use for
+your own solutions, or take as inspiration to construct your own toolkit.
 -->
 
 ---
 transition: fade-out
+layout: two-cols
 ---
 
 # What is Advent of Code?
@@ -41,12 +47,21 @@ transition: fade-out
 A series of programming puzzle challenges held every
 year in December
 
+<v-clicks>
+
 - 📅 Running every year since 2015
-- 🌟 500 puzzles released so far
+- 🌟 524 puzzles released so far
 - 🆓 Free (as in beer) to play
 - 🛠 Use whatever languages and tools you like
+- 👍 It's awesome
+
+</v-clicks>
 
 [https://adventofcode.com](https://adventofcode.com)
+
+::right::
+
+<img src="./aoc-2025.png" alt="AOC front page for 2025" />
 
 ---
 layout: two-cols
@@ -54,20 +69,24 @@ layout: two-cols
 
 # What is Brendan?
 
+<v-clicks>
+
 - A (vaguely) humaniform carbon-based life form who likes programming.
-- Solved all 500 AoC puzzles released to date
+- Solved all 524 AoC puzzles released to date
 - Even managed to rank in the top 1000 on the global leaderboard for a few of
-  the puzzles in 2014
+  the puzzles in 2024
+
+</v-clicks>
 
 ::right::
 
-<v-click>
+<v-click at="2">
     <div style="padding: 16px;">
-        <img src="./stars.png" alt="500 stars" />
+        <img src="./stars.png" alt="524 stars" />
     </div>
 </v-click>
 
-<v-click>
+<v-click at="3">
     <div style="padding: 16px;">
         <img src="./times-2014.png" alt="personal times for 2014" />
     </div>
@@ -76,6 +95,8 @@ layout: two-cols
 ---
 
 # How does it work?
+
+<v-clicks depth="2">
 
 - During the challenge, a new puzzle is released each day at midnight US EST (4
   pm in Canberra)
@@ -89,17 +110,23 @@ layout: two-cols
 - Part Two has some kind of twist that makes it a lot harder
 - Submit the correct answer for Part Two to get a second ⭐ 
 
+</v-clicks>
+
 ---
 layout: two-cols
 ---
 
 # Who is it for?
 
+<v-clicks depth="2">
+
 - People with some programming experience
 - Computer science background not required (but it does help)
 - High-spec hardware not required
   - All puzzles solvable in <15s on basic commodity hardware
   - (although I was occasionally too stupid to find a fast solution)
+
+</v-clicks>
 
 ::right::
 
@@ -108,10 +135,10 @@ layout: two-cols
 </div>
 
 ---
-layout: two-cols
----
 
 # What are the puzzles like?
+
+<v-clicks depth="2">
 
 - Christmas themed 🎄
 - Difficulty generally increasing each day
@@ -121,11 +148,16 @@ layout: two-cols
 - Beautiful ASCII art on the Advent Calendar page
 - Fun little hover titles hidden through the text
 
-::right::
+</v-clicks>
 
-<div style="margin-top: 3.5em;"></div>
+---
+
+# What are the puzzles like?
 
 Many different problem types, but some recurring features:
+
+<v-clicks depth="2">
+
 - Text parsing
 - Data structures
 - Grids and geometry
@@ -135,12 +167,17 @@ Many different problem types, but some recurring features:
 - Combinatorics
 - Recursion
 
+</v-clicks>
+
 ---
 
 # What language to use?
 
+<v-click>
+
 ## Python, obviously
 
+</v-click>
 <v-click>
     <p>
         Seriously though, Python is the most popular choice.
@@ -157,28 +194,56 @@ Many different problem types, but some recurring features:
 </v-click>
 
 ---
-layout: image-right
-image: ./third-place.jpg
+layout: two-cols
 ---
 
 # What changed in 2025?
 
-- Number of puzzles reduced from 25 to 12
+<v-clicks>
+
+- Number of puzzle days reduced from 25 to 12
 - Global leaderboard shut down
-  - Bad actors and AI abusers ruined it for everybody
   - Private leaderboards still allowed
 
+</v-clicks>
+
+<v-click>
+
+## How come?
+
+Bad actors and AI abusers ruined it for everybody
+
+</v-click>
+
+::right::
+
+<v-click>
+    <div style="padding: 16px;">
+        <img src="./third-place.jpg" alt="Third place" />
+    </div>
+</v-click>
 ---
 
 # Tips?
 
-- **Don't get discouraged**, some of these puzzles are genuinely *super* hard
-- **Explore the Standard Library**, loads of very helpful modules are already
-  built right into Python
-- **Check out the subreddit**, mostly a very positive community
-- **Have fun with it**, try out a new technique or a library or even a whole language, or make a
-  cool visualisation
-- **Don't stress about leaderboard timings**
+<h2>Don't get discouraged</h2>
+<p>Some of these puzzles are genuinely *super* hard</p>
+
+<v-click>
+  <h2>Explore the Standard Library</h2>
+  <p>Loads of very helpful modules are already built right into Python</p>
+</v-click>
+
+<v-click>
+  <h2>Check out the subreddit</h2>
+  <p>Mostly a very positive community of players</p>
+</v-click>
+
+<v-click>
+  <h2>Have fun with it</h2>
+  <p>Try out a new technique, or a library or even a whole language, or make a
+  cool visualisation</p>
+</v-click>
 
 ---
 layout: image-right
