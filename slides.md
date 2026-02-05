@@ -29,7 +29,7 @@ duration: 35min
 <!--
 Hi everyone, and welcome to my talk about Advent of Code.
 
-In this talk, I'm going to give an overview about what Advent of Code is, who
+I'm going to give an overview about what Advent of Code is, who
 it's for and hopefully give you a sense about whether it's your jam.
 
 Then, I'm going to give a quick tour through the Python toolkit that I've built
@@ -102,8 +102,8 @@ layout: two-cols
   pm in Canberra)
 - All puzzles remain open to complete at any time
 - Each puzzle has a text description of the problem, an explanation of the
-  rules, and an example input
-- Log in with your profile to get access to your randomised puzzle input 
+ rules, a small example input, and the answer you should get for the example input.
+- Log in with your profile to get access to your personalised puzzle input 
 - Use whatever languages and tools you like to solve the problem
   - But don't use AI, that sucks 🤖🙅‍♂️
 - Submit the correct answer to get a ⭐ and reveal Part Two
@@ -175,7 +175,7 @@ Many different problem types, but some recurring features:
 
 <v-click>
 
-## Python, obviously
+## 🐍 Python, obviously
 
 </v-click>
 <v-click>
@@ -374,7 +374,7 @@ Utility modules
 - Fun and informative
 
 <div style="margin: 16px auto;">
-    <img src="https://github.com/direvus/adventofcode/raw/main/vis/y2019d15.gif" />
+    <img src="./y2019d15.gif" />
 </div>
 
 <!-- Making visualisations is not formally part of the AoC challenge, but is
